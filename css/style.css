@@ -1,0 +1,77 @@
+/* -- reset -- */
+* {margin: 0; box-sizing: border-box; list-style: none; padding: 0; text-decoration: none}
+a {text-decoration: none;}
+img {max-width: 100%}
+
+/* -- styles -- */
+
+/* clases para colores */
+.yellow {background-color: hsl(31, 77%, 52%); color: hsl(31, 77%, 52%);}
+.aguamarina {background-color: hsl(184, 100%, 22%); color: hsl(184, 100%, 22%);}
+.dark {background-color: hsl(179, 100%, 13%); color: hsl(179, 100%, 13%);}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    margin: auto;
+    padding: 60px 0 60px 0;
+}
+
+
+.container div:first-child {border-radius: 5px 5px 0 0;}
+.container div:last-child {border-radius: 0 0 5px 5px;}
+
+.card {
+    width: 315px;
+    padding: 40px;
+}
+
+.card__icon {
+    margin-bottom: 30px;
+}
+
+.card__title {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 36px;
+    color: hsl(0, 0%, 95%);
+    padding-bottom: 25px;
+}
+
+.card__description {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 300;
+    line-height: 26px;
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 30px;
+}
+
+.card__cta {
+    display: inline-block;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    padding: 15px 30px;
+    border-radius: 30px;
+} /* para que se respete las dimensiones de padding del boton, tiene que ser inline-block */
+
+/* media queries - tablet - desktop */
+@media (min-width:768px) {
+    
+    .container {
+        display: flex;
+    }
+
+    .container div:first-child {border-radius: 5px 0 0 5px;}
+    .container div:last-child {border-radius: 0 5px 5px 0;}
+    
+    .card__cta:hover {
+        background-color: transparent;
+        color: hsl(0, 0%, 95%);
+    }
+
+}
+    
