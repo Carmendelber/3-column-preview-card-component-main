@@ -59,7 +59,7 @@ body {
 } /* para que se respete las dimensiones de padding del boton, tiene que ser inline-block */
 
 /* media queries - tablet - desktop */
-@media (min-width:768px) {
+@media (min-width:1140px) {
     
     .container {
         display: flex;
